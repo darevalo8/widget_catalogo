@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widget_catalogo/src/pages/alert_page.dart';
 import 'package:widget_catalogo/src/pages/animated_container.dart';
+import 'package:widget_catalogo/src/pages/avatar_page.dart';
 import 'package:widget_catalogo/src/pages/home_page.dart';
 
 void main() {
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
         //TODO extraer las rutas en un archivo routes.dart y llamarlas aqui
         '/': (BuildContext context) => HomePage(),
         'alerta': (BuildContext context) => AlertPage(),
-        'container': (BuildContext context) => AnimatedContainerPage()
+        'container': (BuildContext context) => AnimatedContainerPage(),
+        'avatar': (BuildContext context) => AvatarPage(),
       },
     );
   }

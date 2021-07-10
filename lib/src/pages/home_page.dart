@@ -33,6 +33,16 @@ class HomePage extends StatelessWidget {
               },
             ),
 
+            ListTile(
+              title: Text('Avatar Page'),
+              leading: Icon(Icons.person),
+              trailing: Icon(Icons.keyboard_arrow_right),
+              onTap: () {
+                
+                Navigator.pushNamed(context, 'avatar');
+              },
+            ),
+
           ],
         ),
       )),

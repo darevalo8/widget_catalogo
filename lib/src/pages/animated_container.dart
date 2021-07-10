@@ -33,17 +33,18 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
         )),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.play_circle_filled),
-          onPressed: () {
-            final random = Random();
-            setState(() {
-              this._width = random.nextInt(size.width.toInt()).toDouble();
-              this._height = random.nextInt(size.height.toInt()).toDouble();
-              this._color = Color.fromRGBO(random.nextInt(255),
-                  random.nextInt(255), random.nextInt(255), 1);
-              this._borderRadius =
-                  BorderRadius.circular(random.nextInt(150).toDouble());
-            });
-          },
+          onPressed: _cambiarColor,
+          // onPressed: () {
+          //   final random = Random();
+          //   setState(() {
+          //     this._width = random.nextInt(size.width.toInt()).toDouble();
+          //     this._height = random.nextInt(size.height.toInt()).toDouble();
+          //     this._color = Color.fromRGBO(random.nextInt(255),
+          //         random.nextInt(255), random.nextInt(255), 1);
+          //     this._borderRadius =
+          //         BorderRadius.circular(random.nextInt(150).toDouble());
+          //   });
+          // },
         ));
   }
 
