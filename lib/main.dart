@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_catalogo/src/pages/alert_page.dart';
+import 'package:widget_catalogo/src/pages/animated_container.dart';
 import 'package:widget_catalogo/src/pages/home_page.dart';
 
 void main() {
@@ -19,8 +20,10 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         // context, sirve para saber en que lugar o posicion de la aplicacion.
+        //TODO extraer las rutas en un archivo routes.dart y llamarlas aqui
         '/': (BuildContext context) => HomePage(),
         'alerta': (BuildContext context) => AlertPage(),
+        'container': (BuildContext context) => AnimatedContainerPage()
       },
     );
   }

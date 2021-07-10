@@ -13,6 +13,7 @@ class HomePage extends StatelessWidget {
           child: SingleChildScrollView(
         child: Column(
           children: [
+            // TODO hacer de el widget ListTile sea una funcion widget reutilizable
             ListTile(
               title: Text('Alertas'),
               leading: Icon(Icons.taxi_alert),
@@ -20,6 +21,15 @@ class HomePage extends StatelessWidget {
               onTap: () {
                 
                 Navigator.pushNamed(context, 'alerta');
+              },
+            ),
+            ListTile(
+              title: Text('Container Animado'),
+              leading: Icon(Icons.account_balance_outlined),
+              trailing: Icon(Icons.keyboard_arrow_right),
+              onTap: () {
+                
+                Navigator.pushNamed(context, 'container');
               },
             ),
 
