@@ -43,6 +43,16 @@ class HomePage extends StatelessWidget {
               },
             ),
 
+            ListTile(
+              title: Text('Input Page'),
+              leading: Icon(Icons.accessible),
+              trailing: Icon(Icons.keyboard_arrow_right),
+              onTap: () {
+                
+                Navigator.pushNamed(context, 'input');
+              },
+            ),
+
           ],
         ),
       )),

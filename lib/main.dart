@@ -3,6 +3,7 @@ import 'package:widget_catalogo/src/pages/alert_page.dart';
 import 'package:widget_catalogo/src/pages/animated_container.dart';
 import 'package:widget_catalogo/src/pages/avatar_page.dart';
 import 'package:widget_catalogo/src/pages/home_page.dart';
+import 'package:widget_catalogo/src/pages/input_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         'alerta': (BuildContext context) => AlertPage(),
         'container': (BuildContext context) => AnimatedContainerPage(),
         'avatar': (BuildContext context) => AvatarPage(),
+        'input': (BuildContext context) => InputPage(),
       },
     );
   }
